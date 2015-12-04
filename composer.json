@@ -1,0 +1,11 @@
+{
+    "name": "koudai/website",
+    "authors": [
+        {
+            "name": "grohiro"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}

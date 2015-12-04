@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION['csrf.token'] = sha1(time()." ".microtime()." ".uniqid());
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -32,6 +37,7 @@
     <![endif]-->
 
     <link rel="icon" href="favicon.ico" type="image/vnd.microsoft.icon" />
+
 </head>
 
 <body id="page-top">
@@ -60,6 +66,9 @@
                     </li>
                     <li>
                         <a class="page-scroll" href="#company">会社情報</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">お問い合わせ</a>
                     </li>
                 </ul>
             </div>
@@ -169,6 +178,28 @@
         </div>
     </section>
 
+    <aside class="bg-dark">
+    </aside>
+
+    <section id="contact">
+    <form class="form">
+    <input type="hidden" id="csrfToken" name="csrfToken" value="<?php echo htmlspecialchars($_SESSION['csrf.token']); ?>" />
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+                <h2 class="section-heading">お問い合わせ</h2>
+                返信のために本文にお名前、連絡先、メールアドレスをご記入ください。
+                <div id="message-group" class="form-group">
+                  <textarea id="message" name="" cols="30" rows="10" class="form-control"></textarea>
+                  <span id="message-help" class="help-block"></span>
+                </div>
+                <input type="button" id="submitBtn" class="btn btn-primary" data-sending-text="送信中..." value="送信する" />
+                <span id="result-text" class="help-block"></span>
+            </div>
+      </div>
+    </form>
+    </section>
+
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
@@ -182,6 +213,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
+    <script src="js/site/index.js"></script>
 
 </body>
 
