@@ -28,6 +28,7 @@ $_SESSION['csrf.token'] = sha1(time()." ".microtime()." ".uniqid());
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/creative.css" type="text/css">
+    <link rel="stylesheet" href="css/growk-custom.css" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -199,6 +200,12 @@ $_SESSION['csrf.token'] = sha1(time()." ".microtime()." ".uniqid());
       </div>
     </form>
     </section>
+
+    <footer role="contentinfo" id="footer">
+    <div class="container">
+      <a href="https://github.com/grohiro/" target="_blank"><img src="img/GitHub-Mark-32px.png" alt="Github" border="0" class="github-icon" /></a>
+    </div>
+    </footer>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

@@ -1,0 +1,13 @@
+/**
+ * custom css
+ */
+
+footer#footer {
+  background-color: #5a5760;
+  color: #99979c;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+}
+
