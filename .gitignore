@@ -1,3 +1,6 @@
 /vendor/
 contact_form.config.php
 *.coffee
+
+# scripts
+start
