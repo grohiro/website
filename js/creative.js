@@ -36,7 +36,7 @@
     );
 
     // Offset for Main Navigation
-    $('#mainNav').affix({
+    $('#page-top > #mainNav').affix({
         offset: {
             top: 100
         }

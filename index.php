@@ -71,6 +71,9 @@ $_SESSION['csrf.token'] = sha1(time()." ".microtime()." ".uniqid());
                     <li>
                         <a class="page-scroll" href="#contact">お問い合わせ</a>
                     </li>
+                    <li>
+                        <a class="page-scroll" href="startup.html">スタートアップ向け</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -133,7 +136,7 @@ $_SESSION['csrf.token'] = sha1(time()." ".microtime()." ".uniqid());
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                        <h3>ウェブサービスの開発</h3>
+                        <h3>ウェブサービス開発</h3>
                         <p class="text-muted"></p>
                     </div>
                 </div>
@@ -144,6 +147,11 @@ $_SESSION['csrf.token'] = sha1(time()." ".microtime()." ".uniqid());
                         <p class="text-muted"></p>
                     </div>
                 </div>
+            </div>
+            <div class="row">
+              <div class="text-center">
+                  <h3><a href="startup.html">スタートアップの開発支援について</a></h3>
+              </div>
             </div>
         </div>
     </section>
